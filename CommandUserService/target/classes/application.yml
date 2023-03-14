@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: SimpleCommandCQRSAxonFramework
+  data:
+    mongodb:
+      database: user_simple_cqrs
+      port: 27017
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.dani.command.serializer.UserSerializer
+
+axon:
+  eventhandling:
+    processors:
+      eventProcessor:
+        mode: subscribing
+  serializer:
+    general: xstream
+    messages: jackson
+    events: jackson
