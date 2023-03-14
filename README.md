@@ -1,7 +1,7 @@
 # Simple-User-Domain-CQRS-using-Axon-Framework
 
-This simple project describe simple user domain cqrs using Axon Framework
-there are 3 changes event in this sample, they are
+This simple project describe simple user domain cqrs using Axon Framework.
+There are 3 changes event in this sample, they are
 
 UserCreatedEvent -> UserActivatedEvent -> UserDeactivatedEvent
 
