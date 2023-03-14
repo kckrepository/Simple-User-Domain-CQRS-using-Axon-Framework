@@ -17,7 +17,7 @@ CommandUserService
 kafka
 ----------------------------
                  |
-                \/    describe event for query persentation layer
+                \/    subscribe event for query persentation layer
 
 --------------------------------------
 QueryUserService
